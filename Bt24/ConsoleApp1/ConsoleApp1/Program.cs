@@ -4,20 +4,22 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Ung so le cua 555 : ");
-            printNumber(555);
+            Console.Write("Nhap so n : ");
+            int n_231 = int.Parse(Console.ReadLine());
+            Console.WriteLine("Ung so le cua " + n_231 + " : ");
+            printNumber(n_231);
         }
 
-        private static void printNumber(int n)
+        private static void printNumber(int n_231)
         {
-            int i = 1;
-            while (i <= n)
+            int i_231 = 1;
+            while (i_231 <= n_231)
             {
-                if ((n % i == 0) && ((i & 1) == 1))
+                if ((n_231 % i_231 == 0) && ((i_231 & 1) == 1))
                 {
-                    Console.Write(i + "\t");
+                    Console.Write(i_231 + "\t");
                 }
-                i++;
+                i_231++;
             }
         }
     }
