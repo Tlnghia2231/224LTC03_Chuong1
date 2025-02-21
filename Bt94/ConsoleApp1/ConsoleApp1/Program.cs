@@ -10,14 +10,14 @@
 
         private static void printNumber()
         {
-            int i = 1;
-            while (i < 100)
+            int i_231 = 1;
+            while (i_231 < 100)
             {
-                if (!(i == 5 || i == 7 || i == 93) && ((i & 1) == 1))
+                if (!(i_231 == 5 || i_231 == 7 || i_231 == 93) && ((i_231 & 1) == 1))
                 {
-                    Console.Write(i + ", ");
+                    Console.Write(i_231 + ", ");
                 }
-                i++;
+                i_231++;
             }
         }
     }
