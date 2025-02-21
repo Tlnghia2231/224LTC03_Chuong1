@@ -4,23 +4,27 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("BCNN cua 12 va 14 la : " + BCNN(12, 14));
+            Console.Write("Nhap so a : ");
+            int a_231 = int.Parse(Console.ReadLine());
+            Console.Write("Nhap so b : ");
+            int b_231 = int.Parse(Console.ReadLine());
+            Console.WriteLine("BCNN cua 2 so la : " + BCNN(a_231, b_231));
         }
 
-        private static int UCLN(int a, int b)
+        private static int UCLN(int a_231, int b_231)
         {
-            while (b != 0)
+            while (b_231 != 0)
             {
-                int temp = b;
-                b = a % b;
-                a = temp;
+                int temp = b_231;
+                b_231 = a_231 % b_231;
+                a_231 = temp;
             }
-            return Math.Abs(a);
+            return Math.Abs(a_231);
         }
 
-        static int BCNN(int a, int b)
+        static int BCNN(int a_231, int b_231)
         {
-            return Math.Abs(a * b) / UCLN(a, b);
+            return Math.Abs(a_231 * b_231) / UCLN(a_231, b_231);
         }
     }
 }
