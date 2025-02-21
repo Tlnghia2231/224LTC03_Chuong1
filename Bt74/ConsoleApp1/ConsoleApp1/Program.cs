@@ -4,24 +4,28 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine(result(2, 4));
+            Console.Write("Nhap so x : ");
+            int x_231 = int.Parse(Console.ReadLine());
+            Console.Write("Nhap so n : ");
+            int n_231 = int.Parse(Console.ReadLine());
+            Console.WriteLine(result(x_231, n_231));
         }
 
-        private static double result(int x, int n)
+        private static double result(int x_231, int n_231)
         {
-            double S = 1;
-            int i = 0;
-            while (i <= n)
+            double S_231 = 1;
+            int i_231 = 0;
+            while (i_231 <= n_231)
             {
-                S += (Math.Pow(-1, i + 1) * Math.Pow(x, (2 * i + 1)) / Giaithua(2 * i + 1));
-                i++;
+                S_231 += (Math.Pow(-1, i_231 + 1) * Math.Pow(x_231, (2 * i_231 + 1)) / Giaithua(2 * i_231 + 1));
+                i_231++;
             }
-            return S;
+            return S_231;
         }
-        private static long Giaithua(int n)
+        private static long Giaithua(int n_231)
         {
-            if (n == 0 || n == 1) return 1;
-            return n * Giaithua(n - 1);
+            if (n_231 == 0 || n_231 == 1) return 1;
+            return n_231 * Giaithua(n_231 - 1);
         }
     }
 }
