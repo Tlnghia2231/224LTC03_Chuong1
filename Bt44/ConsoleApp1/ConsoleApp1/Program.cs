@@ -4,18 +4,20 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine(result(1234));
+            Console.Write("Nhap so n : ");
+            int n_231 = int.Parse(Console.ReadLine());
+            Console.WriteLine(result(n_231));
         }
 
-        private static int result(int n)
+        private static int result(int n_231)
         {
-            int S = 0;
-            while (n > 0)
+            int S_231 = 0;
+            while (n_231 > 0)
             {
-                S += n % 10;
-                n /= 10;
+                S_231 += n_231 % 10;
+                n_231 /= 10;
             }
-            return S;
+            return S_231;
         }
     }
 }
