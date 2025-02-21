@@ -4,18 +4,22 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("2x + 6  = 0");
-            result(2, 6);
+            Console.Write("Nhap so a : ");
+            int a_231 = int.Parse(Console.ReadLine());
+            Console.Write("Nhap so b : ");
+            int b_231 = int.Parse(Console.ReadLine());
+            result(a_231, b_231);
         }
 
-        private static void result(int a, int b)
+        private static void result(int a_231, int b_231)
         {
-            if (a == 0)
+            Console.WriteLine(a_231 + "x + " + b_231 + " = 0");
+            if (a_231 == 0)
             {
-                if (b == 0) Console.WriteLine("Vo so nghiem");
-                else Console.WriteLine("Vo nghiem");
+                if (b_231 == 0) Console.WriteLine("=> Vo so nghiem");
+                else Console.WriteLine("=> Vo nghiem");
             }
-            else Console.WriteLine(-b * 1.0 / a);
+            else Console.WriteLine("=> x = " + (-b_231 * 1.0 / a_231));
         }
     }
 }
