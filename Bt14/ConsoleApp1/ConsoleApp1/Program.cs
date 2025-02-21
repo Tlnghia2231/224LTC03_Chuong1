@@ -4,19 +4,23 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine(result(2, 3));
+            Console.Write("Nhap so x : ");
+            int x_231 = int.Parse(Console.ReadLine());
+            Console.Write("Nhap so n : ");
+            int n_231 = int.Parse(Console.ReadLine());
+            Console.WriteLine(result(x_231, n_231));
         }
 
-        private static double result(int x,int n)
+        private static double result(int x_231,int n_231)
         {
-            int i = 0;
-            double S = 0;
-            while (i < n)
+            int i_231 = 0;
+            double S_231 = 0;
+            while (i_231 < n_231)
             {
-                S += Math.Pow(x, 2 * i + 1);
-                i++;
+                S_231 += Math.Pow(x_231, 2 * i_231 + 1);
+                i_231++;
             }
-            return S;
+            return S_231;
         }
     }
 }
